@@ -1,0 +1,29 @@
+dependencies:
+- dep_id: dep_emh0ehpb7oyzl
+  version: {dev: false}
+  resolution_hints: {app_id: L6JANKHDCMK64OB6, name: Horizontal Rule, package_name: HorizontalRule}
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: HomeForm}
+package_name: Catchy
+allow_embedding: false
+name: Catchy
+runtime_options:
+  version: 2
+  client_version: '3'
+  server_version: python3-full
+  server_spec: {base: python310-minimal}
+metadata: {title: Catchy, logo_img: 'asset:Catchy-Logo-512x494.png'}
+startup_form: null
+db_schema:
+  tbldictionarylist:
+    client: full
+    server: full
+    columns:
+    - name: dictionaryPasswords
+      admin_ui: {width: 200, order: 0}
+      type: string
+    title: tblDictionaryList
+renamed: true

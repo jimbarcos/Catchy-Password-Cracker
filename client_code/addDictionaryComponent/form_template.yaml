@@ -1,0 +1,82 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- name: outlined_card_1
+  properties: {role: tonal-card, background: '#0F67B1', col_widths: '{"MZOPRW":15,"VUSHCH":45}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'IYLGQC,ZHQCZO'}
+  components:
+  - name: image_1
+    properties: {height: 179.19998168945312, source: _/theme/Catchy-Logo-512x494.png}
+    type: Image
+    layout_properties: {grid_position: 'KAPMPU,MZOPRW'}
+  - name: label_title
+    properties: {text: Dictionary Table, bold: true, align: center, font_size: 62, foreground: '#ffffff'}
+    type: Label
+    layout_properties: {grid_position: 'KAPMPU,VUSHCH FHYDUM,DAUBNV'}
+  - name: label_3_copy
+    properties: {text: Here is a list of commonly used and leaked passwords that will be compared against the password you input., foreground: '#ffffff', bold: false, font_size: 16, align: center}
+    type: Label
+    layout_properties: {grid_position: 'KAPMPU,VUSHCH AGPVIO,CRILDT'}
+- name: outlined_card_2
+  properties: {role: outlined-card, col_widths: '{"RRCKNO":60,"BQCJTF":15}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'MYFOZI,TIKAUW'}
+  components:
+  - name: label_title_copy
+    properties: {text: Enter the secret key to contribute to the Dictionary List., bold: true, align: left, font_size: 19, background: ''}
+    type: Label
+    layout_properties: {grid_position: 'RFDUSV,SDNDOR'}
+  - name: txtEdit
+    properties: {role: outlined, hide_text: false}
+    type: TextBox
+    layout_properties: {grid_position: 'LUQKYI,RRCKNO'}
+    event_bindings: {pressed_enter: txtEdit_pressed_enter, change: txtEdit_change}
+  - name: btnEdit
+    properties: {text: Verify, align: center, role: filled-button, background: '#0F67B1', bold: true, foreground: '#FFFFFF'}
+    type: Button
+    layout_properties: {grid_position: 'LUQKYI,BQCJTF'}
+    event_bindings: {click: btnEdit_click}
+- name: outlined_card_2_copy
+  properties: {role: outlined-card, col_widths: '{"RRCKNO":60,"BQCJTF":15}', visible: false}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'PYLHJT,RHAGWQ'}
+  components:
+  - name: label_title_copy_copy
+    properties: {text: You are currently in Edit Mode., bold: true, align: left, font_size: 19, foreground: '#c5fd81'}
+    type: Label
+    layout_properties: {grid_position: 'RFDUSV,SDNDOR'}
+  - name: txtSubmit
+    properties: {role: outlined}
+    type: TextBox
+    layout_properties: {grid_position: 'LUQKYI,RRCKNO'}
+    event_bindings: {pressed_enter: txtSubmit_pressed_enter, change: txtSubmit_change}
+  - name: btnSubmit
+    properties: {text: 'Submit ', align: center, role: filled-button, background: '#ADD8E6', bold: true, foreground: '#094577'}
+    type: Button
+    layout_properties: {grid_position: 'LUQKYI,BQCJTF'}
+    event_bindings: {click: btnSubmit_click}
+- name: spacer_1
+  properties: {height: 44.33331298828125}
+  type: Spacer
+  layout_properties: {grid_position: 'VSBRUX,MZTRDD'}
+- name: outlined_card_3
+  properties: {role: null, col_widths: '{"XJRMZH":5,"WOJQYC":55}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'RNSXGU,YTIVUI'}
+  components:
+  - name: label_1_copy
+    properties: {text: '  Dictionary List', bold: true, align: left, font_size: 25}
+    type: Label
+    layout_properties: {grid_position: 'TIRZNJ,WOJQYC'}
+- name: outlined_card_4
+  properties: {role: tonal-card}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'ZIQCDR,LLVILE'}
+  components:
+  - name: repeating_panel_1
+    properties: {item_template: addDictionaryComponent.ItemTemplate1}
+    type: RepeatingPanel
+    layout_properties: {grid_position: 'PXUTQV,OYMQXJ'}
+is_package: true

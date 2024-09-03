@@ -1,0 +1,335 @@
+container: {type: ColumnPanel}
+components:
+- name: outlined_card_1
+  properties: {role: elevated-card, background: '#0F67B1', col_widths: '{"MZOPRW":15,"VUSHCH":45}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'BFHOAF,XZKLRB'}
+  components:
+  - name: image_1
+    properties: {height: 179.19998168945312, source: _/theme/Catchy-Logo-512x494.png, visible: true}
+    type: Image
+    layout_properties: {grid_position: 'KAPMPU,MZOPRW'}
+  - name: label_title
+    properties: {text: Detailed Guide, bold: true, align: center, font_size: 56, foreground: '#ffffff', spacing_below: none}
+    type: Label
+    layout_properties: {grid_position: 'KAPMPU,VUSHCH FHYDUM,DAUBNV'}
+  - name: label_1
+    properties: {text: 'Welcome to our web application designed to demonstrate cybersecurity concepts and raise awareness about password security. ', foreground: '#ffffff', bold: false, font_size: 16, align: center, spacing_above: none}
+    type: Label
+    layout_properties: {grid_position: 'KAPMPU,VUSHCH AGPVIO,CRILDT'}
+    data_bindings: []
+- name: label_2
+  properties: {text: 'Please read the following guidelines to maximize your experience:', role: null, font_size: 16, italic: true}
+  type: Label
+  layout_properties: {grid_position: 'MQFQRN,SLXNMA'}
+- name: outlined_card_3
+  properties: {role: outlined-card, col_widths: '{}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'JSTNAZ,QXVYUN'}
+  components:
+  - name: xy_panel_1
+    properties: {height: 222.39996337890625, spacing_above: small}
+    type: XYPanel
+    layout_properties: {grid_position: 'THJHBZ,RGNOKN'}
+    components:
+    - name: label_3
+      properties:
+        role: title
+        bold: true
+        align: left
+        spacing_above: none
+        icon: fa:info-circle
+        foreground: '#96C9F4'
+        spacing_below: none
+        font_size: 24
+        text: |
+          Application Components
+      type: Label
+      layout_properties: {x: 0, y: 12.200024414807558, width: 938.4000244140625}
+    - name: label_4
+      properties: {text: 'This application consists of three main components:', spacing_above: none, font_size: 16}
+      type: Label
+      layout_properties: {x: 0, y: 72.97501831129193, width: 938.4000244140625}
+    - name: rich_text_1
+      properties:
+        format: markdown
+        content: |-
+          • Bruteforce/Dictionary Attack Demonstration
+
+          • Cyber Bot Aid
+
+          • List of Dictionary Tables
+        spacing_below: small
+      type: RichText
+      layout_properties: {x: 30.249996948987246, y: 110.68751220777631, width: 301.9875183105469}
+    - name: horizontal_rule_1
+      properties: {}
+      type: form:dep_emh0ehpb7oyzl:HorizontalRule
+      layout_properties: {x: 0, y: 45.50001220777631, width: 938.3890000000001}
+- name: outlined_card_4
+  properties: {role: outlined-card, col_widths: '{}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'XYSGPU,XIKTHO'}
+  components:
+  - name: xy_panel_1_copy_copy
+    properties: {height: 132.79998779296875, spacing_above: small}
+    type: XYPanel
+    layout_properties: {grid_position: 'THJHBZ,RGNOKN'}
+    components:
+    - name: label_5
+      properties:
+        role: title
+        bold: true
+        align: left
+        spacing_above: none
+        icon: fa:info-circle
+        foreground: '#96C9F4'
+        spacing_below: none
+        font_size: 24
+        text: |
+          Purpose
+      type: Label
+      layout_properties: {x: 0, y: 12.200024414807558, width: 938.4000244140625}
+    - name: label_6
+      properties: {text: The Bruteforce/Dictionary Attack Demonstration showcases common password attacks to highlight security vulnerabilities., spacing_above: none, font_size: 16}
+      type: Label
+      layout_properties: {x: 0, y: 72.97501831129193, width: 938.2222290039062}
+    - name: horizontal_rule_2
+      properties: {}
+      type: form:dep_emh0ehpb7oyzl:HorizontalRule
+      layout_properties: {x: 0, y: 45.50001220777631, width: 938.222}
+- name: outlined_card_5
+  properties: {role: outlined-card, col_widths: '{}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'FRRDPB,DBHCNQ'}
+  components:
+  - name: xy_panel_1_copy
+    properties: {height: 119, spacing_above: small}
+    type: XYPanel
+    layout_properties: {grid_position: 'THJHBZ,RGNOKN'}
+    components:
+    - name: label_7
+      properties:
+        role: title
+        bold: true
+        align: left
+        spacing_above: none
+        icon: fa:info-circle
+        foreground: '#96C9F4'
+        spacing_below: none
+        font_size: 24
+        text: |
+          Usage Instructions
+      type: Label
+      layout_properties: {x: 0, y: 12.200024414807558, width: 938.4000244140625}
+    - name: label_8
+      properties: {text: 'To use the demonstration attacks effectively, ensure all required fields are filled or checked.', spacing_above: none, font_size: 16}
+      type: Label
+      layout_properties: {x: 0, y: 72.97501831129193, width: 938.4000244140625}
+    - name: horizontal_rule_3
+      properties: {}
+      type: form:dep_emh0ehpb7oyzl:HorizontalRule
+      layout_properties: {x: 0, y: 45.50001220777631, width: 938.3890000000001}
+  - name: image_2
+    properties: {height: 51.20001220703125, source: _/theme/Screenshot.png}
+    type: Image
+    layout_properties: {grid_position: 'JDKNCG,BLYJOF'}
+- name: outlined_card_6
+  properties: {role: outlined-card, col_widths: '{}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'UEDWCP,XVNLAC'}
+  components:
+  - name: xy_panel_1_copy_copy_copy_copy
+    properties: {height: 132.79998779296875, spacing_above: small}
+    type: XYPanel
+    layout_properties: {grid_position: 'THJHBZ,RGNOKN'}
+    components:
+    - name: label_9
+      properties:
+        role: title
+        bold: true
+        align: left
+        spacing_above: none
+        icon: fa:info-circle
+        foreground: '#96C9F4'
+        spacing_below: none
+        font_size: 24
+        text: |
+          Dictionary Composition
+      type: Label
+      layout_properties: {x: 0, y: 12.200024414807558, width: 938.4000244140625}
+    - name: label_10
+      properties: {text: The Dictionary includes common and leaked passwords commonly used in attacks., spacing_above: none, font_size: 16}
+      type: Label
+      layout_properties: {x: 0, y: 72.97501831129193, width: 938.4000244140625}
+    - name: horizontal_rule_4
+      properties: {}
+      type: form:dep_emh0ehpb7oyzl:HorizontalRule
+      layout_properties: {x: 0, y: 45.50001220777631, width: 938.3890000000001}
+- name: outlined_card_7
+  properties: {role: outlined-card, col_widths: '{}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'CMXNOP,SPPLPG'}
+  components:
+  - name: xy_panel_1_copy_2
+    properties: {height: 208, spacing_above: small}
+    type: XYPanel
+    layout_properties: {grid_position: 'THJHBZ,RGNOKN'}
+    components:
+    - name: label_11
+      properties:
+        role: title
+        bold: true
+        align: left
+        spacing_above: none
+        icon: fa:info-circle
+        foreground: '#96C9F4'
+        spacing_below: none
+        font_size: 24
+        text: |
+          Resource Consumption
+      type: Label
+      layout_properties: {x: 0, y: 12.200024414807558, width: 938.4000244140625}
+    - name: label_12
+      properties: {text: Please note that these processes may consume resources on your computer., spacing_above: none, font_size: 16}
+      type: Label
+      layout_properties: {x: 0, y: 72.97501831129193, width: 938.4000244140625}
+    - name: rich_text_2
+      properties:
+        format: markdown
+        content: |-
+          • The application may consume CPU and system resources during the execution of the Bruteforce and Dictionary Attack demonstrations.
+
+          • Prolonged or intensive use of the application may affect the performance of your device, particularly in terms of responsiveness and battery life.
+        spacing_below: small
+      type: RichText
+      layout_properties: {x: 30.249996948987246, y: 110.68751220777631, width: 873.1619755859375}
+    - name: horizontal_rule_5
+      properties: {}
+      type: form:dep_emh0ehpb7oyzl:HorizontalRule
+      layout_properties: {x: 0, y: 45.50001220777631, width: 938.3885419921876}
+- name: outlined_card_8
+  properties: {role: outlined-card, col_widths: '{}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'PWOOOD,FPLSRR'}
+  components:
+  - name: xy_panel_1_copy_copy_copy_copy_copy
+    properties: {height: 132.79998779296875, spacing_above: small}
+    type: XYPanel
+    layout_properties: {grid_position: 'THJHBZ,RGNOKN'}
+    components:
+    - name: label_13
+      properties:
+        role: title
+        bold: true
+        align: left
+        spacing_above: none
+        icon: fa:info-circle
+        foreground: '#96C9F4'
+        spacing_below: none
+        font_size: 24
+        text: |
+          Data Privacy
+      type: Label
+      layout_properties: {x: 0, y: 12.200024414807558, width: 938.4000244140625}
+    - name: label_14
+      properties: {text: The application does not store or log any password entered into the textbox., spacing_above: none, font_size: 16}
+      type: Label
+      layout_properties: {x: 0, y: 72.97501831129193, width: 938.4000244140625}
+    - name: horizontal_rule_6
+      properties: {}
+      type: form:dep_emh0ehpb7oyzl:HorizontalRule
+      layout_properties: {x: 0, y: 45.50001220777631, width: 938.3890000000001}
+- name: outlined_card_9
+  properties: {role: outlined-card, col_widths: '{}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'WZUTFZ,JSTRLG'}
+  components:
+  - name: xy_panel_1_copy_2_copy
+    properties: {height: 274.6000061035156, spacing_above: small}
+    type: XYPanel
+    layout_properties: {grid_position: 'THJHBZ,RGNOKN'}
+    components:
+    - name: label_15
+      properties:
+        role: title
+        bold: true
+        align: left
+        spacing_above: none
+        icon: fa:info-circle
+        foreground: '#96C9F4'
+        spacing_below: none
+        font_size: 24
+        text: |
+          Calculations
+      type: Label
+      layout_properties: {x: 0, y: 12.200024414807558, width: 938.4000244140625}
+    - name: label_16
+      properties: {text: 'Here are the calculations/time complexity for this application:', spacing_above: none, font_size: 16}
+      type: Label
+      layout_properties: {x: 0, y: 72.97501831129193, width: 938.4000244140625}
+    - name: rich_text_3
+      properties:
+        format: markdown
+        content: |-
+          • Elapsed Time is the sum of the Password Attack and any specified time delay.
+
+          • Password security and estimations are based on the range type and character search space (length).
+
+          • The calculation for maximum attempts follows `O(n^k)`, where: `n` represents the number of characters and `k` represents the search space (length).
+
+          • The combination calculation for the Dictionary Attack follows `O(n)`, where n is the count of entries in the Dictionary List.
+        spacing_below: small
+      type: RichText
+      layout_properties: {x: 25.833384197205305, y: 120.59722900390625, width: 873.1527709960938}
+    - name: horizontal_rule_7
+      properties: {}
+      type: form:dep_emh0ehpb7oyzl:HorizontalRule
+      layout_properties: {x: 0, y: 45.50001220777631, width: 938.3890000000001}
+- name: outlined_card_10
+  properties: {role: outlined-card, col_widths: '{}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'IDYRTN,OCZWMU'}
+  components:
+  - name: xy_panel_1_copy_2_copy_copy
+    properties: {height: 177, spacing_above: small}
+    type: XYPanel
+    layout_properties: {grid_position: 'THJHBZ,RGNOKN'}
+    components:
+    - name: label_17
+      properties:
+        role: title
+        bold: true
+        align: left
+        spacing_above: none
+        icon: fa:info-circle
+        foreground: '#96C9F4'
+        spacing_below: none
+        font_size: 24
+        text: |
+          Brute Force Process
+      type: Label
+      layout_properties: {x: 0, y: 12.200024414807558, width: 938.4000244140625}
+    - name: label_18
+      properties: {text: Select the process that suits your device and requirements., spacing_above: none, font_size: 16}
+      type: Label
+      layout_properties: {x: 0, y: 72.97501831129193, width: 938.4000244140625}
+    - name: rich_text_4
+      properties:
+        format: markdown
+        content: |-
+          • Itertools provide a more efficient way to handle memory and combinations compared to the Product Method.
+
+          • The Product method is a self-imposed function that collects all the combinations while returning it for checking.
+        spacing_below: small
+      type: RichText
+      layout_properties: {x: 30.249996948987246, y: 110.68751220777631, width: 873.1619755859375}
+    - name: horizontal_rule_8
+      properties: {}
+      type: form:dep_emh0ehpb7oyzl:HorizontalRule
+      layout_properties: {x: 0, y: 45.50001220777631, width: 938.3890000000001}
+  - name: image_3_copy
+    properties: {height: 45.79998779296875, source: _/theme/Screenshot-2.png}
+    type: Image
+    layout_properties: {grid_position: 'ZOGAYB,PXSVDB'}
+is_package: true

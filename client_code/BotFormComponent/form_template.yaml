@@ -1,0 +1,48 @@
+container: {type: ColumnPanel}
+components:
+- name: outlined_card_1
+  properties: {role: outlined-card, background: '#0F67B1', col_widths: '{"MZOPRW":15,"VUSHCH":45}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'NURXQX,CXERKN'}
+  components:
+  - name: image_1
+    properties: {height: 179.19998168945312, source: _/theme/Catchy-Logo-512x494.png}
+    type: Image
+    layout_properties: {grid_position: 'KAPMPU,MZOPRW'}
+  - name: label_title
+    properties: {text: '- Ask Catchy - ', bold: true, align: center, font_size: 56, foreground: '#ffffff'}
+    type: Label
+    layout_properties: {grid_position: 'KAPMPU,VUSHCH FHYDUM,DAUBNV'}
+  - name: label_3_copy
+    properties: {text: 'Hello, I''m Catchy, here to address your cybersecurity questions. Simply type your queries in the text box, and I''ll provide curated answers to your concerns.', foreground: '#f5f5f5', bold: false, font_size: 16, align: center}
+    type: Label
+    layout_properties: {grid_position: 'KAPMPU,VUSHCH AGPVIO,CRILDT'}
+- name: outlined_card_1_copy
+  properties: {role: outlined-card, background: '', foreground: '#f5f5f5', col_widths: '{}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'DAWDWT,DHPZXL'}
+  components:
+  - name: label_3_copy_2
+    properties:
+      text: |
+        For the best response, keep your questions concise and focused on cybersecurity. The cyber bot specializes in cybersecurity inquiries.
+      align: center
+      font_size: 15
+      icon: ''
+    type: Label
+    layout_properties: {grid_position: 'OPTAAX,RSFRUC'}
+  - name: txtQuestion
+    properties: {role: outlined, background: '#e5f4f8', placeholder: 'type your question here :)', bold: false, foreground: '#013c4b'}
+    type: TextBox
+    layout_properties: {grid_position: 'XGKZCE,JMTBBS'}
+    event_bindings: {pressed_enter: txtQuestion_pressed_enter}
+  - name: btnRespond
+    properties: {text: Generate Response, role: tonal-button, background: '#094577', spacing_above: large, bold: true, foreground: '#FBF8F9'}
+    type: Button
+    layout_properties: {grid_position: 'VJQVLL,HHBXDU'}
+    event_bindings: {click: btnRespond_click}
+  - name: txtOutput
+    properties: {foreground: '#f5f5f5', font_size: 16, enable_slots: true, format: plain_text, align: left}
+    type: RichText
+    layout_properties: {grid_position: 'TLWCNO,FMQZZU'}
+is_package: true

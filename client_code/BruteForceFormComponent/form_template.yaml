@@ -1,0 +1,226 @@
+container: {type: ColumnPanel}
+components:
+- name: timer
+  properties: {interval: 0.2}
+  type: Timer
+  layout_properties: {grid_position: 'RDPHWD,VJNHPF'}
+  event_bindings: {tick: timer_tick}
+- name: timer_Bruteforce
+  properties: {interval: 0}
+  type: Timer
+  layout_properties: {grid_position: 'AVQBUN,PUMVJV', full_width_row: false}
+  event_bindings: {tick: timer_Bruteforce_tick}
+  data_bindings: []
+- name: timer_Dictionary
+  properties: {interval: 0}
+  type: Timer
+  layout_properties: {grid_position: 'XKCUYA,VTUDYP'}
+  event_bindings: {tick: timer_Dictionary_tick}
+- name: outlined_card_1
+  properties: {role: tonal-card, background: '#0F67B1', col_widths: '{"MZOPRW":15,"VUSHCH":45}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'SWBKOF,GDYSGQ'}
+  components:
+  - name: image_1
+    properties: {height: 179.19998168945312, source: _/theme/Catchy-Logo-512x494.png}
+    type: Image
+    layout_properties: {grid_position: 'KAPMPU,MZOPRW'}
+  - name: label_title
+    properties: {text: '', bold: true, align: center, font_size: 90, spacing_above: none}
+    type: Label
+    layout_properties: {grid_position: 'KAPMPU,VUSHCH FHYDUM,DAUBNV'}
+  - name: label_2
+    properties: {align: center, text: Discover your password strength with our Brute Force password cracking tool., font_size: 16, bold: false, foreground: '#ffffff'}
+    type: Label
+    layout_properties: {grid_position: 'KAPMPU,VUSHCH AGPVIO,AVZRFR'}
+- name: outlined_card_3
+  properties: {role: outlined-card, col_widths: '{"XNREFJ":10,"WOMPOB":50}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'QGSASG,XACPCS'}
+  components:
+  - name: outlined_card_4
+    properties: {role: null}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'SJOADT,JJRFZC'}
+    components:
+    - name: label_3_copy
+      properties:
+        text: |
+          Bruteforce Range Type:
+        align: left
+        bold: true
+        spacing_below: none
+        spacing_above: none
+        font_size: 16
+      type: Label
+      layout_properties: {grid_position: 'KZHNZH,IVNKAI'}
+    - name: lowercaseCB
+      properties: {text: Small Alphabets (a-z), enabled: true, visible: true, checked: true, background: '#3FA2F6', align: center, foreground: '#ffffff'}
+      type: CheckBox
+      layout_properties: {grid_position: 'KLQXZT,LMYBQU'}
+    - name: uppercaseCB
+      properties: {text: Big Alphabets (A-Z), enabled: true, visible: true, checked: true, background: '#3FA2F6', align: center, foreground: '#ffffff'}
+      type: CheckBox
+      layout_properties: {grid_position: 'KLQXZT,USZWTK'}
+      event_bindings: {change: uppercaseCB_change}
+    - name: numbercaseCB
+      properties: {text: Numbers (0-9), enabled: true, visible: true, checked: true, background: '#3FA2F6', align: center, foreground: '#ffffff'}
+      type: CheckBox
+      layout_properties: {grid_position: 'KLQXZT,VUQTKZ'}
+    - name: specialcaseCB
+      properties: {text: Special Characters, enabled: true, visible: true, checked: true, background: '#3FA2F6', align: center, foreground: '#ffffff'}
+      type: CheckBox
+      layout_properties: {grid_position: 'KLQXZT,ADXFFV'}
+  - name: label_4
+    properties: {text: 'Time Delay (Seconds):', bold: true, font_size: 16}
+    type: Label
+    layout_properties: {grid_position: 'UMFLSG,QCJUYE'}
+  - name: delayTxt
+    properties: {type: number, text: '0.01', hide_text: false, bold: false}
+    type: TextBox
+    layout_properties: {grid_position: 'IPMFBJ,XNREFJ'}
+    event_bindings: {pressed_enter: delayTxt_pressed_enter, change: delayTxt_change}
+    data_bindings: []
+  - name: warningLabel
+    properties: {text: Lower than the default time delay may result in a serious lagging due to instant execution of combination., visible: false, foreground: 'theme:Tertiary', align: center}
+    type: Label
+    layout_properties: {grid_position: 'IPMFBJ,WOMPOB'}
+  - name: outlined_card_8
+    properties: {role: outlined-card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'MJBIEN,ORSIGJ'}
+    components:
+    - name: label_3_copy_copy
+      properties:
+        text: |
+          Select Brute Force Process:
+        align: left
+        bold: true
+        spacing_below: none
+        spacing_above: none
+        font_size: 16
+      type: Label
+      layout_properties: {grid_position: 'QQVKKA,WZIIXP'}
+    - name: rbItertools
+      properties: {text: 'Itertools Method [Recommended]', selected: true, bold: false}
+      type: RadioButton
+      layout_properties: {grid_position: 'LYQFHJ,FWEEFX'}
+    - name: rbProduct
+      properties: {text: 'Product Method [High Memory Allocation]', bold: false}
+      type: RadioButton
+      layout_properties: {grid_position: 'LYQFHJ,XEENYM'}
+- name: outlined_card_2
+  properties: {role: tonal-card, background: '#0F67B1', col_widths: '{}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'SXYPIX,FCCCZG'}
+  components:
+  - name: label_1_copy
+    properties: {text: 'Enter Password:', visible: true, bold: true, font_size: 18, foreground: '#ffffff'}
+    type: Label
+    layout_properties: {grid_position: 'QPCFBR,FXURDV'}
+  - name: passwordTxt
+    properties: {role: outlined, placeholder: Type password here..., text: '', enabled: true, font_size: 16}
+    type: TextBox
+    layout_properties: {grid_position: 'ZVXMEF,EVRRYJ'}
+    event_bindings: {pressed_enter: passwordTxt_pressed_enter, change: passwordTxt_change}
+  - name: outlined_card_5
+    properties: {role: null, col_widths: '{"ISRHSS":30,"XADHMX":30}'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'BUMMYI,JACYQY'}
+    components:
+    - name: outlined_card_7
+      properties: {role: null}
+      type: ColumnPanel
+      layout_properties: {grid_position: 'UCMDRD,ISRHSS'}
+      components:
+      - name: btnDictionary
+        properties: {text: Generate Dictionary Attack, role: tonal-button, icon: 'fa:book', bold: true, align: center, font_size: 18, background: '#094577', foreground: '#ffffff'}
+        type: Button
+        layout_properties: {grid_position: 'UOTWBB,XRGMFF'}
+        event_bindings: {click: btnDictionary_click}
+    - name: outlined_card_6
+      properties: {role: null, col_widths: '{}'}
+      type: ColumnPanel
+      layout_properties: {grid_position: 'UCMDRD,XADHMX'}
+      components:
+      - name: btnBruteforce
+        properties: {text: Generate Bruteforce Attack, role: tonal-button, icon: 'fa:keyboard-o', bold: true, font_size: 18, background: '#094577', foreground: '#ffffff'}
+        type: Button
+        layout_properties: {grid_position: 'ZBSBJO,FNJCXN'}
+        event_bindings: {click: btnBruteforce_click}
+  - name: stopBtn
+    properties: {role: outlined-button, bold: true, align: full, background: '#ffffff', icon: 'fa:stop-circle-o', icon_align: left, foreground: '#FF6666', visible: false, text: Stop the Process}
+    type: Button
+    layout_properties: {grid_position: 'JRJCVU,BGBSDC', full_width_row: false}
+    event_bindings: {click: stopBtn_click}
+  - name: stringLabel
+    properties: {visible: false, text: 'Current String ', bold: true, font_size: 32, foreground: '#e5f4f8', align: center}
+    type: Label
+    layout_properties: {grid_position: 'VGXJUY,RGXPMU'}
+  - name: cardDisplay
+    properties: {role: outlined-card, visible: false}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'ZBZXWW,UCEQND'}
+    components:
+    - name: passAttemptTxt
+      properties: {visible: true, text: '', bold: true, font_size: 30, foreground: ''}
+      type: Label
+      layout_properties: {grid_position: 'XDZUOV,ZPOTOI'}
+  - name: cardCombinations
+    properties: {role: outlined-card, background: '#094577', visible: false}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'FNUGCJ,EWMIZW'}
+    components:
+    - name: TotalCombinationsTxt
+      properties:
+        visible: false
+        text: |
+          Total Combinations Run:
+        bold: true
+        font_size: 18
+      type: Label
+      layout_properties: {grid_position: 'LDLLNT,MIZNPE'}
+    - name: ElapsedTimeTxt
+      properties: {visible: false, text: 'Elapsed Time:', bold: true, font_size: 18}
+      type: Label
+      layout_properties: {grid_position: 'LDLLNT,TKVOIZ'}
+- name: cardEvaluation
+  properties: {role: outlined-card, visible: false}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'CEZIAT,QVJXAK'}
+  components:
+  - name: label_1
+    properties: {text: 'Password Evaluation:', bold: true, font_size: 20}
+    type: Label
+    layout_properties: {grid_position: 'YFPZWV,WDKQQQ'}
+  - name: flow_panel_1
+    properties: {align: center, spacing: none, vertical_align: full}
+    type: FlowPanel
+    layout_properties: {grid_position: 'JZPNXT,VYMNGX'}
+    components:
+    - name: redBox
+      properties: {role: null, enabled: false, align: center, background: '#FF6666', spacing_above: none, spacing_below: none}
+      type: TextBox
+      layout_properties: {}
+    - name: orangeBox
+      properties: {role: null, enabled: false, align: center, background: '#FF8C66', spacing_above: none, spacing_below: none}
+      type: TextBox
+      layout_properties: {}
+    - name: yelloBox
+      properties: {role: null, enabled: false, align: center, background: '#FFEB99', spacing_above: none, spacing_below: none}
+      type: TextBox
+      layout_properties: {}
+    - name: greenBox
+      properties: {role: null, enabled: false, align: center, background: '#c5fd81', spacing_above: none, spacing_below: none}
+      type: TextBox
+      layout_properties: {}
+      event_bindings: {pressed_enter: greenBox_pressed_enter}
+  - name: rtCombinations
+    properties: {spacing_below: none, font_size: 18}
+    type: RichText
+    layout_properties: {grid_position: 'HSZYIX,MMEQCX'}
+  - name: rich_text_2
+    properties: {spacing_above: none, content: 'Here, we check only the password''s length and its presence in the Dictionary List. For stronger security, use combinations of lowercase letters, numbers, and special characters, and avoid common or easily guessable words.', font_size: 16}
+    type: RichText
+    layout_properties: {grid_position: 'IQJGCO,OFAVNB'}
+is_package: true

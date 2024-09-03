@@ -1,0 +1,26 @@
+is_package: true
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- name: outlined_card_1
+  properties: {role: elevated-card, col_widths: '{"XPOCTS":30,"SMQOCY":30}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'KTVHEG,LTNEIZ'}
+  components:
+  - name: lblPasswords
+    properties: {text: lblPasswords, bold: true, font_size: 15, align: center}
+    type: Label
+    layout_properties: {grid_position: 'IOGVSB,XPOCTS'}
+    data_bindings:
+    - {property: tag, code: 'self.item[''dictionaryPasswords'']', writeback: false}
+  - name: btnDelete
+    properties: {text: ' Delete record (need a secret key)', icon: 'fa:trash', font_size: 15, foreground: 'theme:Error', align: center, visible: true}
+    type: Button
+    layout_properties: {grid_position: 'IOGVSB,SMQOCY QHPTEJ,ORUBLH'}
+    event_bindings: {click: btnDelete_click}
+  - name: outlined_1
+    properties: {role: outlined, visible: false, align: center}
+    type: TextBox
+    layout_properties: {grid_position: 'IOGVSB,SMQOCY SCAXBT,FVHOHX'}
+    event_bindings: {pressed_enter: outlined_1_pressed_enter, change: outlined_1_change}

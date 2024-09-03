@@ -1,0 +1,54 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components: []
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  components:
+  - name: link_bot
+    properties: {text: Ask Catchy, bold: false, font_size: 14}
+    type: Link
+    layout_properties: {}
+    event_bindings: {click: link_bot_click}
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
+  components:
+  - name: link_1
+    properties: {text: Home, foreground: '#ffffff', role: null, icon: 'fa:home'}
+    type: Link
+    layout_properties: {grid_position: 'BNOXFK,LNTUHQ'}
+    event_bindings: {click: link_1_click}
+    components: []
+  - name: spacer_1_copy_copy
+    properties: {height: 7.79998779296875}
+    type: Spacer
+    layout_properties: {grid_position: 'QSWCZN,MRESBO'}
+  - name: link_3
+    properties: {text: Detailed Guide, foreground: '#ffffff', role: null, icon: 'fa:book'}
+    type: Link
+    layout_properties: {grid_position: 'NOAJTL,MAKZPC'}
+    event_bindings: {click: link_3_click}
+    components: []
+  - name: spacer_1_copy
+    properties: {height: 7.79998779296875}
+    type: Spacer
+    layout_properties: {grid_position: 'ZMBCAN,DYOAKI'}
+  - name: link_2
+    properties: {text: Dictionary Table, foreground: '#ffffff', role: null, icon: 'fa:list', italic: false}
+    type: Link
+    layout_properties: {grid_position: 'HPIMRA,OBTJWV'}
+    event_bindings: {click: link_2_click}
+- name: HyperLabel
+  properties: {text: 'Catchy: Password Cracker', bold: true, font_size: 19}
+  type: Label
+  layout_properties: {slot: title}
